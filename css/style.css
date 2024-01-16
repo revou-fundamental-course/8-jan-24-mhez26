@@ -7,12 +7,27 @@ header {
 }
 
 header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #3A4D39;
     background-color: #95c693;
+    margin-bottom: 0px;
+}
+
+.squareImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+header h2 {
+    color: #3A4D39;
+    background-color: #95c693;
+    margin-top: 0px;
 }
 
 header h4 {
-    margin-top: 32px;
+    margin-top: 16px;
     color: #3A4D39;
 }
 
@@ -23,9 +38,53 @@ header p {
     margin-bottom: 20px;
 }
 
+.luasPersegi {
+    border-style: groove;
+    padding: 10px;
+}
+
+.kelilingPersegi {
+    margin-top: 10px;
+    border-style: groove;
+    padding: 10px;
+}
+
+#titleLuas {
+    color: white;
+    background-color: #477c45;
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    margin-top: 1px;
+    font-weight: bolder;
+}
+
+#titleKeliling {
+    color: white;
+    background-color: #477c45;
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    margin-top: 1px;
+    font-weight: bolder;
+}
+
+.formula {
+    text-align: center;
+    font-size: larger;
+    background-color: #95c693;
+    font-weight: bolder;
+    padding: 5px;
+}
+
 .inputSection {
     display: flex;
     flex-direction: column;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
 }
 
 #squareSide {
@@ -35,6 +94,12 @@ header p {
     border-radius: 8px;
     border: solid #739072;
     padding: 10px;
+}
+
+#lblSquareSide {
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
 }
 
 #squareSide:hover {
