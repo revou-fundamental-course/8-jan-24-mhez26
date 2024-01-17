@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, #95c6937c, rgba(210, 210, 144, 0.689));
 }
 
 header {
@@ -9,7 +10,7 @@ header {
 header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    background-color: #95c693;
+    background-image: linear-gradient(to right, #95c693, rgb(210, 210, 144));
     margin-bottom: 0px;
 }
 
@@ -22,7 +23,7 @@ header h1 {
 
 header h2 {
     color: black;
-    background-color: #95c693;
+    background-image: linear-gradient(to right, #95c693, rgb(210, 210, 144));
     margin-top: 0px;
 }
 
@@ -41,17 +42,19 @@ header p {
 .luasPersegi {
     border-style: groove;
     padding: 10px;
+    background-color: beige;
 }
 
 .kelilingPersegi {
     margin-top: 10px;
     border-style: groove;
     padding: 10px;
+    background-color: #e1f3df;
 }
 
 #titleLuas {
     color: white;
-    background-color: #477c45;
+    background-color: rgb(136, 136, 20);
     padding: 10px;
     font-size: large;
     text-align: center;
@@ -69,7 +72,15 @@ header p {
     font-weight: bolder;
 }
 
-.formula {
+#luasFormula {
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(210, 210, 144);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#kelilingFormula {
     text-align: center;
     font-size: larger;
     background-color: #95c693;
@@ -92,7 +103,7 @@ header p {
     margin-bottom: 10px;
     outline: none;
     border-radius: 8px;
-    border: solid #739072;
+    border: solid rgb(136, 136, 20);
     padding: 10px;
 }
 
@@ -112,14 +123,23 @@ header p {
 }
 
 #squareSide:hover {
-    border: solid #3A4D39;
+    border: solid black;
 }
 
 #sisiKeliling:hover {
-    border: solid #3A4D39;
+    border: solid black;
 }
 
-button {
+.buttonL {
+    background-color: rgb(136, 136, 20);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.buttonK {
     background-color: #739072;
     color: white;
     border: none;
@@ -128,11 +148,27 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.buttonL:hover {
+    background-color: rgb(83, 83, 11);
+}
+
+.buttonK:hover {
     background-color: #4F6F52;
 }
 
 button:active {
     background-color: #3A4D39;
     transform: translateY(2px);
+}
+
+#hasilLuas3 {
+    font-weight: bolder;
+    background-color: rgb(210, 210, 144);
+    padding: 5px;
+}
+
+#hasilKeliling3 {
+    font-weight: bolder;
+    background-color: #95c693;
+    padding: 5px;
 }
