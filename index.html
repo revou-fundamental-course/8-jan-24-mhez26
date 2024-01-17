@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">    
     <title>Katik Persegi</title>
 </head>
 <body>
@@ -26,30 +25,38 @@
         <p>S = panjang sisi persegi</p>
         <div class="inputSection">
             <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
-            <input type="number" id="squareSide" placeholder="panjang sisi (dalam angka)">
+            <input type="number" id="squareSide" placeholder="panjang sisi (dalam angka dan lebih dari 0)">
         </div>
         <div class="buttons">
             <button id="buttonLuas" onclick="luasPersegi()">Hitung</button>
-            <button id="resetLuas">Reset</button>
+            <button id="resetLuas" onclick="resetLuas()">Reset</button>
         </div>
+        <p id="hasilLuas1"></p>
+        <p id="hasilLuas2"></p>
+        <p id="hasilLuas3"></p>
     </div>
 
     <div class="kelilingPersegi">
         <p id="titleKeliling">KELILING PERSEGI</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Persegi.png" alt="square" class="squareImg">
         <p>Rumus keliling persegi yaitu:</p>
-        <p class="formula" id="kelilingFormula">L = 4 x S</p>
+        <p class="formula" id="kelilingFormula">K = 4 x S</p>
         <p>di mana:</p>
-        <p>L = luas persegi</p>
+        <p>K = keliling persegi</p>
         <p>S = panjang sisi persegi</p>
         <div class="inputSection">
             <label for="squareSide" id="lblSquareSide">Hitung Keliling Persegi</label>
-            <input type="number" id="squareSide" placeholder="panjang sisi (dalam angka)">
+            <input type="number" id="sisiKeliling" placeholder="panjang sisi (dalam angka dan lebih dari 0)">
         </div>
         <div class="buttons">
-            <button id="buttonKeliling">Hitung</button>
-            <button id="resetKeliling">Reset</button>
+            <button id="buttonKeliling" onclick="kelilingPersegi()">Hitung</button>
+            <button id="resetKeliling" onclick="resetKeliling()">Reset</button>
         </div>
+        <p id="hasilKeliling1"></p>
+        <p id="hasilKeliling2"></p>
+        <p id="hasilKeliling3"></p>
     </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

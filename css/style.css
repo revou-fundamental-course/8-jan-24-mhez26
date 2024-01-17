@@ -8,7 +8,7 @@ header {
 
 header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #3A4D39;
+    color: black;
     background-color: #95c693;
     margin-bottom: 0px;
 }
@@ -21,7 +21,7 @@ header h1 {
 }
 
 header h2 {
-    color: #3A4D39;
+    color: black;
     background-color: #95c693;
     margin-top: 0px;
 }
@@ -96,6 +96,15 @@ header p {
     padding: 10px;
 }
 
+#sisiKeliling {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 8px;
+    border: solid #739072;
+    padding: 10px;
+}
+
 #lblSquareSide {
     font-weight: bolder;
     font-size: large;
@@ -103,6 +112,10 @@ header p {
 }
 
 #squareSide:hover {
+    border: solid #3A4D39;
+}
+
+#sisiKeliling:hover {
     border: solid #3A4D39;
 }
 
